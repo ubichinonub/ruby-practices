@@ -1,11 +1,18 @@
-(1..20).each do |n|
-    if n % 3 == 0 && n % 5 == 0
+#!/usr/bin/env ruby
+
+def fizzbuzz(number)
+    
+    if number % 3 == 0 && number % 5 == 0
       puts "FizzBuzz"
-    elsif n % 3 == 0
+    elsif number % 3 == 0
       puts "Fizz"
-    elsif n % 5 == 0
+    elsif number % 5 == 0
       puts "Buzz"
     else
-      puts n
+      puts number
     end
+  end
+
+  (1..20).each do |n|
+    fizzbuzz(n)
   end
